@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/pb_main_pro1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progress="0"
+            android:max="100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/mtv_tv"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"/>
+
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/mbtn_duo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="多线程计算，点击空白处取消"/>
+
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/mbtn_yi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="异步任务计算，点击空白处取消"/>
+
+        <Button
+            android:textAllCaps="false"
+            android:onClick="onClick"
+            android:id="@+id/mbtn_Handler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Handler 下载图片"/>
+
+        <Button
+            android:textAllCaps="false"
+            android:onClick="onClick"
+            android:id="@+id/mbtn_AsyncTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AsyncTask 下载图片"/>
+
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/mbtn_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="其他异步方式"/>
+        <TextView
+            android:id="@+id/mtv_tv2"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"/>
+
+        <ImageView
+            android:id="@+id/mIv_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/img_1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
